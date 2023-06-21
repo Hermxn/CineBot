@@ -1,0 +1,22 @@
+# common
+.*
+!.gitignore
+!.gitkeep
+!.gitattributes
+!.gitmodules
+!.dockerignore
+!.pre-commit-config.yaml
+
+# folders
+__pycache__
+
+# file types
+*.pyc
+
+# include dot files
+!/.gitlab-ci.yml
+
+# dev
+/*.egg-info
+/pip-wheel-metadata
+coverage.xml

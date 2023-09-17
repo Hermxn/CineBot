@@ -1,0 +1,16 @@
+import os
+
+
+BOT_TOKEN = os.environ['BOT_TOKEN']
+API_TOKEN = os.environ['API_TOKEN']
+
+
+POSTGRES_NAME = os.environ['POSTGRES_NAME']
+POSTGRES_PASSWORD = os.environ['POSTGRES_PASSWORD']
+POSTGRES_USER = os.environ['POSTGRES_USER']
+POSTGRES_HOST = os.environ['POSTGRES_HOST']
+POSTGRES_PORT = os.environ.get('POSTGRES_PORT', 5432)
+POSRGRES_URL = (
+    f'postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PASSWORD}'
+    f'@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_NAME}'
+)
